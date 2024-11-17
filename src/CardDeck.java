@@ -32,8 +32,8 @@ public class CardDeck {
     public String[] drawCard() {
         Integer[] key = useDeck.keySet().toArray(new Integer[0]);
         int random = (int)(Math.random() * key.length);
-        String[] cardDrawn = deck.get(key[random]);
-        deck.remove(key[random]);
+        String[] cardDrawn = useDeck.get(key[random]);
+        useDeck.remove(key[random]);
         return cardDrawn;
     }
 
