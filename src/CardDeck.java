@@ -15,7 +15,7 @@ public class CardDeck {
     }
 
     public void createDeck() {
-        Integer runs = 0;
+        Integer runs = (Integer) 0;
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 13; j++) {
                 String[] card = {ranks[j], suits[i]};
