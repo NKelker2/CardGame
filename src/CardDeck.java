@@ -7,7 +7,7 @@ public class CardDeck {
     static String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
 
     static Map<Integer, String[]> deck = new HashMap<>();
-    private Map<Integer, String[]> useDeck = new HashMap<>();
+    public Map<Integer, String[]> useDeck = new HashMap<>();
 
     public CardDeck() {
         createDeck();
